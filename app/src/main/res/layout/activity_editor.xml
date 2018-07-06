@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/marginBig"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_product_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_product_name"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_price"
+        android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/decrease_btn"
+        android:layout_width="@dimen/buttonHight"
+        android:layout_height="@dimen/buttonHight"
+        android:background="@color/colorAccent"
+        android:text="@string/decrease"/>
+
+    <EditText
+        android:id="@+id/edit_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginSmall"
+        android:hint="@string/hint_quantity"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/increase_btn"
+        android:layout_width="@dimen/buttonHight"
+        android:layout_height="@dimen/buttonHight"
+        android:background="@color/colorAccent"
+        android:text="@string/increase"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edit_supplier_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_supplier_name"
+        android:inputType="textCapWords" />
+    <EditText
+        android:id="@+id/edit_supplier_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_supplier_phone"
+        android:inputType="phone" />
+    <Button
+        android:id="@+id/order_btn"
+        style="@style/buttonStyle"
+        android:text="@string/orderButton" />
+
+
+</LinearLayout>
